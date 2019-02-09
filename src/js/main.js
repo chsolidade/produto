@@ -1,3 +1,9 @@
+$(function(){
+    
+    // $('#ondevaificar').load('src/pages/teste.html')
+    $('#metodologia').load('src/pages/metodologia.html')
+})
+
 $(document).ready(function() {
 
     function scrollnav() {
