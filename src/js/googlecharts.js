@@ -8,7 +8,7 @@ google.charts.setOnLoadCallback(drawRegionsMap);
 
 function drawRegionsMap() {
   var data = google.visualization.arrayToDataTable([
-    ['Country', 'Popularity'],
+    ['País', 'População'],
     ['Argentina', 200],
     ['Bolívia', 300],
     ['Brazil', 400],

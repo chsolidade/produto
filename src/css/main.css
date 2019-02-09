@@ -19,7 +19,7 @@
 .cabecalho-imagem {
     grid-column: 1 / span 3;
     grid-row: 1 / span 5;
-    background-image: url("/src/img/imagem-cabecalho.jpg");
+    background-image: url("https://static1.squarespace.com/static/5afaab4dec4eb7e1dd4cee00/t/5afb14e6aa4a99b83ba187a5/1526404329313/green.png?format=1500w");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,12 +27,27 @@
     filter: blur(8px);
     /* position: ; */
     z-index: -9999;
-
 }
+
 .cabecalho-texto {
     grid-column: 1 / span 3;
     grid-row: 2 / span 3;    
 }
+
+.sub-titulo {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: transparent;
+    z-index: -9998;
+}
+
+.subtitulo-texto {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;    
+}
+
+
 /* .nav-color {
 background-color: chartreuse;
 
