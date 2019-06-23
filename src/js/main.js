@@ -1,5 +1,5 @@
 $(function(){
-    $('#metodologia').load('src/pages/metodologia.html')
+    $('#metodologia').load('src/pages/tabelas/metodologia.html')
     
 })
 
