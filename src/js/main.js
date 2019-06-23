@@ -1,22 +1,34 @@
 $(function(){
     
-    // $('#ondevaificar').load('src/pages/teste.html')
-    $('#metodologia').load('src/pages/metodologia.html')
 })
 
 $(document).ready(function() {
+    $('#metodologia').load('src/pages/metodologia.html')
+    let last_known_scroll_position = 0;
+    let ticking = false;
+    
+    function doSomething(scroll_pos) {
+        console.log(scroll_pos)
+        if(scroll_pos > 10 ) {
+            $('#navheader').removeClass('navheader-color')
+        }else{
+            $('#navheader').addClass('navheader-color')
 
-    function scrollnav() {
-        $(window).scroll(function(){
-          var scroll = $(window).scroll();
-            if (scroll > 5) {
-                $("#navheader").css(  "background-color","aliceblue")
-            } else {
-                $("#navheader").css(  "background-color","#3333")
-
-            }
-        })
-    };
+        }
+    }
+    
+    window.addEventListener('scroll', function(e) {
+      last_known_scroll_position = window.scrollY;
+    
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          doSomething(last_known_scroll_position);
+          ticking = false;
+        });
+    
+        ticking = true;
+      }
+    });
 
     
 });

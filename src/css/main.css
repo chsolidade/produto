@@ -46,6 +46,15 @@
     grid-column: 1 / span 3;
     grid-row: 2 / span 3;    
 }
+#navheader{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.navheader-color{
+    background-color: rgba(0, 0, 0, .85);
+}
 
 
 /* .nav-color {
