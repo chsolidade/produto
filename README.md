@@ -6,3 +6,5 @@ git pull
 git add .
 git commi -m ""
 git push
+
+Teste
