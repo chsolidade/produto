@@ -19,7 +19,7 @@
 .cabecalho-imagem {
     grid-column: 1 / span 3;
     grid-row: 1 / span 5;
-    background-image: url("https://static1.squarespace.com/static/5afaab4dec4eb7e1dd4cee00/t/5afb14e6aa4a99b83ba187a5/1526404329313/green.png?format=1500w");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Mercosur_%28Portuguese%29.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
