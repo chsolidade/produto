@@ -16,13 +16,15 @@ $(function(){
 $(document).ready(function() {
     let last_known_scroll_position = 0;
     let ticking = false;
+    console.log('opa' )
+
     function doSomething(scroll_pos) {
       if(scroll_pos > 10 ) {
-          
-        $('#navheader').removeClass('navheader-color', 'bg-dark')
+        $('#navheader').removeClass('bg-dark')
         $('#navheader').addClass('navheader-color')
       }else{
-        $('#navheader').removeClass('navheader-color', 'bg-dark')
+
+        $('#navheader').removeClass('navheader-color')
         $('#navheader').addClass('bg-dark')
 
       }

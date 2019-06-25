@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../src/css/main.css">
-    <link rel="stylesheet" href="../src/css/style-quadro.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/style-quadro.css">
 
     <title>Mercosul</title>
   </head>
@@ -43,51 +43,53 @@
         </div>
       </nav>
       <div class="cabecalho pt-5">
-        <div class="cabecalho-imagem"></div>
+        <!-- <div class="cabecalho-imagem"></div> -->
         <div class="container cabecalho-texto">
+          <img class="cabecalho-imagem" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Mercosur_%28Portuguese%29.svg" alt="">
           <h1 class="display-4">Sobre o trabalho</h1>
-          <p class="lead">
-              A presente dissertação, em nível de mestrado, emergiu a partir do conhecimento de novas propostas políticas educacionais no âmbito governamental apresentadas pelo governo em 2016, e das inquietações pessoais vivenciadas nas escolas públicas da rede estadual de MG.
-              </p>
-              <p class="lead"> 
-              Este trabalho objetiva analisar, por meio da Metodologia de Educação Comparada, as confluências e divergências das políticas educacionais voltadas à formação inicial de professores de Matemática para a educação básica em relação aos países que são do núcleo de Estados Partes do Mercosul; e produzir, como produto educacional, um livro que visará à formação docente por meio da socialização da pesquisa desenvolvida aos interessados no tema. 
-          
-              </p>
+          <div>
+            <p class="lead">
+                A presente dissertação, em nível de mestrado, emergiu a partir do conhecimento de novas propostas políticas educacionais no âmbito governamental apresentadas pelo governo em 2016, e das inquietações pessoais vivenciadas nas escolas públicas da rede estadual de MG.
+                </p>
+                <p class="lead"> 
+                Este trabalho objetiva analisar, por meio da Metodologia de Educação Comparada, as confluências e divergências das políticas educacionais voltadas à formação inicial de professores de Matemática para a educação básica em relação aos países que são do núcleo de Estados Partes do Mercosul; e produzir, como produto educacional, um livro que visará à formação docente por meio da socialização da pesquisa desenvolvida aos interessados no tema. 
+            
+                </p>
+
+          </div>
         </div>
       </div>
 
     </header>
 
-    <main role="main" class="">
+    <main role="main" >
 
       <!-- Metodologia Comparada -->
-      <div class="container" id="metodologia">
-
-        <h1>Metodologia Comparada</h1>
-            
-        <div class="row">
+      <div class="container"  >
+        <section id="metodologia">
+          <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
-                <p>
-                    Nesta pesquisa que se pauta na Metodologia de Educação Comparada, o desafio se encontra na busca pelo 
-                    entendimento das confluências e divergências dos setores educacionais respectivos a cada país do núcleo 
-                    de Estados Partes do Mercosul. Para essa metodologia, é importante o estudo ser capaz de identificar 
-                    o grau de semelhança ou de diferença o porquê isso ocorre, especificando as motivações envolvidas (MANZON, 2015).
-                </p>
-                <img src="./src/img/modelo-de-bereday.JPG" alt="" class="img-fluid rounded">
-                <p>
-                    Nesta pesquisa que se pauta na Metodologia de Educação Comparada, o desafio se encontra na busca pelo 
-                    entendimento das confluências e divergências dos setores educacionais respectivos a cada país do núcleo 
-                    de Estados Partes do Mercosul. Para essa metodologia, é importante o estudo ser capaz de identificar 
-                    o grau de semelhança ou de diferença o porquê isso ocorre, especificando as motivações envolvidas (MANZON, 2015).
-                </p>
-            </div>
+              <h1 class="pt-sm-5 mt-sm-5">Metodologia Comparada</h1>
+                  <p>
+                      Nesta pesquisa que se pauta na Metodologia de Educação Comparada, o desafio se encontra na busca pelo 
+                      entendimento das confluências e divergências dos setores educacionais respectivos a cada país do núcleo 
+                      de Estados Partes do Mercosul. Para essa metodologia, é importante o estudo ser capaz de identificar 
+                      o grau de semelhança ou de diferença o porquê isso ocorre, especificando as motivações envolvidas (MANZON, 2015).
+                  </p>
+                  <img src="./src/img/modelo-de-bereday.JPG" alt="" class="img-fluid rounded">
+                  <p>
+                      Nesta pesquisa que se pauta na Metodologia de Educação Comparada, o desafio se encontra na busca pelo 
+                      entendimento das confluências e divergências dos setores educacionais respectivos a cada país do núcleo 
+                      de Estados Partes do Mercosul. Para essa metodologia, é importante o estudo ser capaz de identificar 
+                      o grau de semelhança ou de diferença o porquê isso ocorre, especificando as motivações envolvidas (MANZON, 2015).
+                  </p>
+              </div>
           </div>
-      </div>
-
+        </section>
       
-      <!-- Mercosul e GeoGoogle -->
-      <div class="container">
-        <section id="Link">
+      
+        <!-- Mercosul e GeoGoogle -->
+        <section id="mercosul" >
           <div>
               <h1 class="display-4">Mercosul</h1>
               <p class="lead">
@@ -100,19 +102,10 @@
                   </p>
             <div id="regions_div" class="geo-google"></div>
           </div>
-        </section>       
-      </div>
-
-  
-      <!-- Comparando os países -->
-          
-      <div class="container">
-        <section id="Link">
-          <div id="regions_div" class="sub-titulo"></div>
-
-
-          <div class="sub-titulo pt-5">
-            <div class="subtitulo-imagem"></div>
+        </section>    
+        <!-- Comparando os países -->
+        <section id="paises">
+          <div class="pt-5">
             <div class="container subtitulo-texto">
               <!-- título -->
               <h1 class="display-4">Comparando os países</h1>
@@ -127,7 +120,7 @@
                 Por sua vez, a terceira fase procura estabelecer semelhanças e diferenças, por meio de critérios de comparabilidade, além de hipóteses para a comparação; por fim, na última, ocorre a comparação de fato, ou seja, simultaneamente, rememorando as hipóteses e tecendo as conclusões. 
               </p>
               <div class="container" id="quadro38"></div>
-             <p class="lead">
+              <p class="lead">
                 No que diz respeito ao contexto sociopolítico e educativo dos países Estados Partes, conforme se observa no quadro 38, foram detalhados, para cada nação: o local, destacando o continente e as fronteiras; a extensão do território, em km²; a quantidade de habitantes em 2016; a distribuição de habitantes, em termos de porcentagem, conforme a região; a expectativa de crescimento de habitantes até 2040; a divisão política, subdivida em departamentos, províncias, estados e cidades; os idiomas oficiais; as moedas; e as crenças religiosas.
               </p>
 
@@ -173,41 +166,36 @@
                   Por fim, no que diz respeito ao ingresso laboral dos egressos formados em cursos de licenciaturas, foram apontados como ocorrem cada um dos processos nas instituições públicas e do setor particular, em caráter efetivo e temporário, para cada um dos cinco países Estados Partes, conforme o quadro 48.
                 </p>
             </div>
-           
+          </div>
+        </section>   
+        <!-- Mais informações -->      
+        <section id="justaposição">
+          <div class="container subtitulo-texto">
+            <p class="">
+              Para obter mais informações sobre este site, acesse a dissertação no site da Universidade Federal de UberLândia.
+            </p>
             
-
+          </div>
         </section>       
       </div>
-
     </main>
-
-
-          <!-- Mais informações -->
-          <div class="container">
-              <section id="Link">
-                <div>
-                    <p class="lead">
-                        Para obter mais informações sobre este site, acesse a dissertação no site da Universidade Federal de UberLândia.
-                      </p>
-                  <div id="regions_div" class="geo-google"></div>
-                </div>
-              </section>       
-            </div>
-
-
-    <!-- Rodapé -->
-    <footer>
-      p
-    </footer>
+      
+      
+      
+      
+      <!-- Rodapé -->
+        <footer>
+            
+        </footer>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="lib/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="src/js/googlecharts.js"></script>
-    <script type="text/javascript" src="src/js/main.js"></script>
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="./src/js/main.js"></script>
+    <script type="text/javascript" src="./src/js/googlecharts.js"></script>
   </body>
 </html>
