@@ -83,7 +83,17 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
+}
+footer{
+    height: 5vw;
+    width: 100%;
+    padding-right: 4em;  
+    background-color: rgba(0, 0, 0, 0.07)  
+}
+.bg-transparent{
+    background-color: transparent;
+
+}
 /* .nav-color {
 background-color: chartreuse;
 
