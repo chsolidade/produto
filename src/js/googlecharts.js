@@ -93,7 +93,7 @@ function drawChart3() {
 function drawBasic() {
 
     var data = google.visualization.arrayToDataTable([
-      ['País', 'PIB'],
+      ['País', 'PIB em 2017'],
       ['Argentina', 637.43],
       ['Bolívia', 37.509],
       ['Brasil', 2056],
@@ -121,7 +121,7 @@ function drawBasic() {
   function drawChart4() {
 
     var data = new google.visualization.DataTable();
-    data.addColumn('number', 'Ano');
+    data.addColumn('number', 'Year');
     data.addColumn('number', 'Argentina');
     data.addColumn('number', 'Brasil');
     data.addColumn('number', 'Bolívia');
