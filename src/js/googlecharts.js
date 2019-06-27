@@ -37,25 +37,60 @@ function drawChart() {
   var data = google.visualization.arrayToDataTable([
     ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai',''],
     ['Professores', 559826, 127609, 1892519, 80852, 31555],
+  ]);
+
+  var options = {
+    chart: {
+      title: 'Quantitativo de professores da Educação Básica pública',
+      subtitle: 'Países Estados Partes do Mercosul',
+    }
+  };
+
+  var chart = new google.charts.Bar(document.getElementById('quadro391'));
+
+  chart.draw(data, google.charts.Bar.convertOptions(options));
+}
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai',''],
     ['Matrículas', 7992265, 2531032, 39721032, 1145841, 557648],
+  ]);
+
+  var options = {
+    chart: {
+      title: 'Quantitativo de alunos da Educação Básica pública',
+      subtitle: 'Países Estados Partes do Mercosul',
+    }
+  };
+
+  var chart = new google.charts.Bar(document.getElementById('quadro392'));
+
+  chart.draw(data, google.charts.Bar.convertOptions(options));
+}
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai',''],
     ['Alunos por professor', 14, 20, 21, 14, 18],
   ]);
 
   var options = {
     chart: {
-      title: 'Quantitativo de professores e alunos da Educação Básica pública',
+      title: 'Relação de professores e alunos da Educação Básica pública',
       subtitle: 'Países Estados Partes do Mercosul',
     }
   };
 
-  var chart = new google.charts.Bar(document.getElementById('quadro39'));
+  var chart = new google.charts.Bar(document.getElementById('quadro393'));
 
   chart.draw(data, google.charts.Bar.convertOptions(options));
 }
+
 function drawBasic() {
 
     var data = google.visualization.arrayToDataTable([
-      ['País', 'País'],
+      ['País', 'PIB'],
       ['Argentina', 637.43],
       ['Bolívia', 37.509],
       ['Brasil', 2056],
