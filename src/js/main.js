@@ -6,7 +6,7 @@ $(function(){
     $('#quadro41').load('src/pages/tabelas/Quadro41.html')
     $('#quadro42').load('src/pages/tabelas/Quadro42.html')
     $('#quadro43').load('src/pages/tabelas/Quadro43.html')
-    $('#quadro44').load('src/pages/tabelas/Quadro44.html')
+    //$('#quadro44').load('src/pages/tabelas/Quadro44.html')
     $('#quadro45').load('src/pages/tabelas/Quadro45.html')
     $('#quadro46').load('src/pages/tabelas/Quadro46.html')
     $('#quadro47').load('src/pages/tabelas/Quadro47.html')

@@ -57,3 +57,34 @@ function drawRegionsMap() {
   </head>
   <body>
     <div id="quadro39" style="width: 800px; height: 500px;"></div>
+
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['País', 'País'],
+        ['Argentina', 637.43],
+        ['Bolívia', 37.509],
+        ['Brasil', 2056],
+        ['Paraguai', 39.667],
+        ['Uruguai', 56.15]
+      ]);
+
+      var options = {
+        title: 'PIB nos países Estados Partes do Mercosul',
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: '',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'País'
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('quadro44'));
+
+      chart.draw(data, options);
+    }
