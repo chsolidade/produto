@@ -9,6 +9,7 @@ google.charts.setOnLoadCallback(drawChart1);
 google.charts.setOnLoadCallback(drawChart2);
 google.charts.setOnLoadCallback(drawChart3);
 google.charts.setOnLoadCallback(drawBasic);
+google.charts.setOnLoadCallback(drawChart4);
 
 
 function drawRegionsMap() {
@@ -112,7 +113,38 @@ function drawBasic() {
       }
     };
 
-    var chart = new google.visualization.BarChart(document.getElementById('quadro44'));
+    var chart = new google.visualization.BarChart(document.getElementById('quadro441'));
 
     chart.draw(data, options);
+  }
+
+  function drawChart4() {
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'Ano');
+    data.addColumn('number', 'Argentina');
+    data.addColumn('number', 'Brasil');
+    data.addColumn('number', 'Bolívia');
+    data.addColumn('number', 'Paraguai');
+    data.addColumn('number', 'Uruguai');		
+    data.addRows([
+      [2011, 0.797, 0.663, 0.718, 0.665, 0.783],
+      [2012, 0.811, 0.675, 0.730, 0.669, 0.792],
+      [2013, 0.808, 0.667, 0.744, 0.676, 0.790],
+      [2014, 0.836, 0.662, 0.755, 0.679, 0.793],
+      [2015, 0.827, 0.674, 0.754, 0.693, 0.795],
+      [2016, 0.825, 0.693, 0.759, 0.702, 0.804],
+      [2017, 0.825, 0.693, 0.759, 0.702, 0.804],
+    ]);
+
+    var options = {
+      chart: {
+        title: 'IDH dos países Estados Partes',
+        subtitle: 'nota recebida'
+      },
+    };
+
+    var chart = new google.charts.Line(document.getElementById('quadro442'));
+
+    chart.draw(data, google.charts.Line.convertOptions(options));
   }
