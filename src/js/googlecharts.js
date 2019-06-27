@@ -29,3 +29,31 @@ function drawRegionsMap() {
 
   chart.draw(data, options);
 }
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai'],
+          ['Professores', 559826, 127609, 1892519, 80852, 31555],
+          ['Matrículas', 7992265, 2531032, 39721032, 1145841, 557648],
+          ['Alunos por professor', 14, 20, 21, 14, 18],
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Quantitativo de professores e alunos da Educação Básica pública',
+            subtitle: 'Países Estados Partes do Mercosul',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('quadro39'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="quadro39" style="width: 800px; height: 500px;"></div>

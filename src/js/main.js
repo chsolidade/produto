@@ -1,7 +1,7 @@
 $(function(){
    
     $('#quadro38').load('src/pages/tabelas/Quadro38.html')
-    $('#quadro39').load('src/pages/tabelas/Quadro39.html')
+    //$('#quadro39').load('src/pages/tabelas/Quadro39.html')
     $('#quadro40').load('src/pages/tabelas/Quadro40.html')
     $('#quadro41').load('src/pages/tabelas/Quadro41.html')
     $('#quadro42').load('src/pages/tabelas/Quadro42.html')
