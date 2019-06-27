@@ -5,7 +5,9 @@ google.charts.load('current', {
   'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
 });
 google.charts.setOnLoadCallback(drawRegionsMap);
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChart1);
+google.charts.setOnLoadCallback(drawChart2);
+google.charts.setOnLoadCallback(drawChart3);
 google.charts.setOnLoadCallback(drawBasic);
 
 
@@ -33,7 +35,7 @@ function drawRegionsMap() {
   chart.draw(data, options);
 }
 
-function drawChart() {
+function drawChart1() {
   var data = google.visualization.arrayToDataTable([
     ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai',''],
     ['Professores', 559826, 127609, 1892519, 80852, 31555],
@@ -51,7 +53,7 @@ function drawChart() {
   chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
-function drawChart() {
+function drawChart2() {
   var data = google.visualization.arrayToDataTable([
     ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai',''],
     ['Matrículas', 7992265, 2531032, 39721032, 1145841, 557648],
@@ -69,7 +71,7 @@ function drawChart() {
   chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
-function drawChart() {
+function drawChart3() {
   var data = google.visualization.arrayToDataTable([
     ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai',''],
     ['Alunos por professor', 14, 20, 21, 14, 18],
