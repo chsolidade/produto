@@ -37,7 +37,7 @@ function drawRegionsMap() {
 
 function drawChart1() {
   var data = google.visualization.arrayToDataTable([
-    ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai',''],
+    ['', 'Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai'],
     ['Professores', 559826, 127609, 1892519, 80852, 31555],
   ]);
 
@@ -55,7 +55,7 @@ function drawChart1() {
 
 function drawChart2() {
   var data = google.visualization.arrayToDataTable([
-    ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai',''],
+    ['', 'Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai'],
     ['Matrículas', 7992265, 2531032, 39721032, 1145841, 557648],
   ]);
 
@@ -73,7 +73,7 @@ function drawChart2() {
 
 function drawChart3() {
   var data = google.visualization.arrayToDataTable([
-    ['Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai',''],
+    ['', 'Argentina', 'Bolívia', 'Brasil', 'Paraguai', 'Uruguai'],
     ['Alunos por professor', 14, 20, 21, 14, 18],
   ]);
 
