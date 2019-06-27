@@ -1,11 +1,13 @@
 google.charts.load('current', {
-  'packages':['geochart','bar'],
+  'packages':['geochart','bar','corechart'],
   // Note: you will need to get a mapsApiKey for your project.
   // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
   'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
 });
 google.charts.setOnLoadCallback(drawRegionsMap);
 google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawBasic);
+
 
 function drawRegionsMap() {
   var data = google.visualization.arrayToDataTable([
@@ -50,3 +52,30 @@ function drawChart() {
 
   chart.draw(data, google.charts.Bar.convertOptions(options));
 }
+function drawBasic() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['País', 'País'],
+      ['Argentina', 637.43],
+      ['Bolívia', 37.509],
+      ['Brasil', 2056],
+      ['Paraguai', 39.667],
+      ['Uruguai', 56.15]
+    ]);
+
+    var options = {
+      title: 'PIB nos países Estados Partes do Mercosul',
+      chartArea: {width: '50%'},
+      hAxis: {
+        title: '',
+        minValue: 0
+      },
+      vAxis: {
+        title: 'País'
+      }
+    };
+
+    var chart = new google.visualization.BarChart(document.getElementById('quadro44'));
+
+    chart.draw(data, options);
+  }
