@@ -10,7 +10,7 @@ function drawRegionsMap() {
   var data = google.visualization.arrayToDataTable([
     ['País', 'População'],
     ['Argentina', 44270000],
-    ['Bolívia', 11050000],
+    ['Bolivia', 11050000],
     ['Brazil', 209300000],
     ['Uruguay', 3457000],
     ['Paraguay', 6811000],
