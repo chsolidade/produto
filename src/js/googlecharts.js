@@ -1,5 +1,5 @@
 google.charts.load('current', {
-  'packages':['geochart','bar','corechart', 'line'],
+  'packages':['geochart','bar','corechart', 'line', 'BubbleChart'],
   // Note: you will need to get a mapsApiKey for your project.
   // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
   'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
@@ -10,7 +10,7 @@ google.charts.setOnLoadCallback(drawChart2);
 google.charts.setOnLoadCallback(drawChart3);
 google.charts.setOnLoadCallback(drawBasic);
 google.charts.setOnLoadCallback(drawChart4);
-
+google.charts.setOnLoadCallback(drawChart5);
 
 function drawRegionsMap() {
   var data = google.visualization.arrayToDataTable([
@@ -121,7 +121,7 @@ function drawBasic() {
   function drawChart4() {
 
     var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Ano');
+    data.addColumn('number', 'Year');
     data.addColumn('number', 'Argentina');
     data.addColumn('number', 'Brasil');
     data.addColumn('number', 'Bolívia');
@@ -148,3 +148,35 @@ function drawBasic() {
 
     chart.draw(data, google.charts.Line.convertOptions(options));
   }
+
+       function drawChart5() {
+        var data = google.visualization.arrayToDataTable([
+          ['ID', 'Duração total', 'Práticas pedagógicas', 'Anos de formação'],
+          ['Argentina', 2600, 650, 4],
+          ['Bolívia', 4800, 560, 5],
+          ['Brasil', 3200, 400, 4],
+          ['Paraguai', 3600, 480, 3],
+          ['Uruguai', 2880, 1240, 4],
+        ]);
+
+        var options = {
+          colorAxis: {colors: ['yellow', 'red']}
+              title: 'Correlation between life expectancy, fertility rate ' +
+           'and population of some world countries (2010)',
+    hAxis: {title: 'Life Expectancy'},
+    vAxis: {title: 'Fertility Rate'},
+    bubble: {
+      textStyle: {
+        fontSize: 12,
+        fontName: 'Poppins',
+        color: 'rgb(102, 102, 102)',
+        bold: true,
+        italic: false
+      }
+    }   
+          
+        };
+
+        var chart = new google.visualization.BubbleChart(document.getElementById('quadro45'));
+        chart.draw(data, options);
+      }
