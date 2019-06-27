@@ -3,9 +3,9 @@ body{
 
 }
 .body-text{
-    color: rgb(102, 102, 102);
-    font-weight: 300;
-    font-size: 1.4em;
+    color: rgb(47, 47, 47);
+    font-weight: 500;
+    font-size: 1em;
     line-height: 1.6em;
 }
 h1{
