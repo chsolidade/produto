@@ -121,11 +121,8 @@ function drawBasic() {
   function drawChart4() {
 
     var data = new google.visualization.DataTable();
-<<<<<<< HEAD
     data.addColumn('number', 'Year');
-=======
     data.addColumn('string', 'Ano');
->>>>>>> dd404ddb36c56c108b1f16eb156f8e518cde2b6e
     data.addColumn('number', 'Argentina');
     data.addColumn('number', 'Brasil');
     data.addColumn('number', 'Bolívia');
