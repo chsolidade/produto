@@ -1,5 +1,5 @@
 google.charts.load('current', {
-  'packages':['geochart','bar','corechart', 'line', 'BubbleChart'],
+  'packages':['geochart','bar','corechart', 'line'],
   // Note: you will need to get a mapsApiKey for your project.
   // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
   'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
@@ -121,7 +121,7 @@ function drawBasic() {
   function drawChart4() {
 
     var data = new google.visualization.DataTable();
-    data.addColumn('number', 'Year');
+    data.addColumn('string', 'Year');
     data.addColumn('number', 'Argentina');
     data.addColumn('number', 'Brasil');
     data.addColumn('number', 'Bolívia');
@@ -149,23 +149,22 @@ function drawBasic() {
     chart.draw(data, google.charts.Line.convertOptions(options));
   }
 
-       function drawChart5() {
-        var data = google.visualization.arrayToDataTable([
-          ['ID', 'Duração total', 'Práticas pedagógicas', 'Anos de formação'],
-          ['Argentina', 2600, 650, 4],
-          ['Bolívia', 4800, 560, 5],
-          ['Brasil', 3200, 400, 4],
-          ['Paraguai', 3600, 480, 3],
-          ['Uruguai', 2880, 1240, 4],
-        ]);
+  function drawChart5() {
+  var data = google.visualization.arrayToDataTable([
+    ['ID', 'Duração total', 'Práticas pedagógicas', 'Anos de formação'],
+    ['Argentina', 2600, 650, 4],
+    ['Bolívia', 4800, 560, 5],
+    ['Brasil', 3200, 400, 4],
+    ['Paraguai', 3600, 480, 3],
+    ['Uruguai', 2880, 1240, 4],
+  ]);
 
-        var options = {
-          colorAxis: {colors: ['yellow', 'red']}
-              title: 'Correlation between life expectancy, fertility rate ' +
-           'and population of some world countries (2010)',
-    hAxis: {title: 'Life Expectancy'},
-    vAxis: {title: 'Fertility Rate'},
-    bubble: {
+  var options = {
+    colorAxis: {colors: ['yellow', 'red']},
+    title: 'Organização curricular dos planos de ensino de formação inicial nos países Estados Partes do Mercosul',
+    hAxis: {title: 'Duração total'},
+    vAxis: {title: 'Práticas pedagógicas'},
+    bubble: { 
       textStyle: {
         fontSize: 12,
         fontName: 'Poppins',
@@ -174,9 +173,9 @@ function drawBasic() {
         italic: false
       }
     }   
-          
-        };
+    
+  };
 
-        var chart = new google.visualization.BubbleChart(document.getElementById('quadro45'));
-        chart.draw(data, options);
-      }
+  var chart = new google.visualization.BubbleChart(document.getElementById('quadro45'));
+  chart.draw(data, options);
+} 
