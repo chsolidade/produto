@@ -16,15 +16,15 @@ function drawRegionsMap() {
   var data = google.visualization.arrayToDataTable([
     ['País', 'População'],
     ['Argentina', 44270000],
-    ['Bolivia', 11050000],
-    ['Brazil', 209300000],
+    ['Bolivia', 11050000], //COMO COLOCAR ACENTO EM "BOLÍVIA"?
+    ['Brazil', 209300000], //COMO ESCREVER BRASIL, URUGUAI E PARAGUAI EM PORTUGUÊS?
     ['Uruguay', 3457000],
     ['Paraguay', 6811000],
   ]);
 
   var options = {
     region: '005', // South America
-    colorAxis: {colors: ['#00853f', 'green', '#e31b23']},
+    colorAxis: {colors: ['#bdbdbd', '#ef5350', '#ffee58', '#42a5f5', '#66bb6a']}, //COMO COLOCAR ESSAS CORES NESSA ORDEM: Ur, Pa, Bo, Ar, Br?
     backgroundColor: 'white',
     datalessRegionColor: '#eeee',
     defaultColor: '#f5f5f5',
@@ -121,10 +121,10 @@ function drawBasic() {
   function drawChart4() {
 
     var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Year');
+    data.addColumn('string', 'Ano');
     data.addColumn('number', 'Argentina');
-    data.addColumn('number', 'Brasil');
     data.addColumn('number', 'Bolívia');
+    data.addColumn('number', 'Brasil');
     data.addColumn('number', 'Paraguai');
     data.addColumn('number', 'Uruguai');		
     data.addRows([

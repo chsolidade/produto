@@ -3,10 +3,16 @@ body{
 
 }
 .body-text{
-    color: rgb(47, 47, 47);
+    color: rgb(102, 102, 102); /* MUDEI A COR, MAS SÓ FOI DE ALGUNS PARÁGRAFOS, OLHA AÍ */
     font-weight: 500;
     font-size: 1em;
     line-height: 1.6em;
+/*} 
+.text-align{
+    justify: true;
+}*/
+/* QUERIA CENTRALIZAR OS TEXTOS À DIREITA TAMBÉM, MAS NÃO CONSEGUI... */
+
 }
 h1{
     color: rgb(51, 51, 51);
