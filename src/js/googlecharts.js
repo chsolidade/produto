@@ -14,17 +14,21 @@ google.charts.setOnLoadCallback(drawChart5);
 
 function drawRegionsMap() {
   var data = google.visualization.arrayToDataTable([
-    ['País', 'População'],
-    ['Argentina', 44270000],
-    ['Bolivia', 11050000], //COMO COLOCAR ACENTO EM "BOLÍVIA"?
-    ['Brazil', 209300000], //COMO ESCREVER BRASIL, URUGUAI E PARAGUAI EM PORTUGUÊS?
-    ['Uruguay', 3457000],
-    ['Paraguay', 6811000],
+    [{label: 'País', id: 'País'}, {label: 'População', id: 'População'}],
+    [{v:'Uruguay',f:'Uruguai'}, {v:1,f:'3.457.000'}],
+    [{v:'Paraguay',f:'Paraguai'}, {v:2,f:'6.811.000'}],
+    [{v:'Bolivia', f:'Bolívia'}, {v:3, f:'1.105.0000'}], //COMO COLOCAR ACENTO EM "BOLÍVIA"?
+    [{v:'Brazil',f:'Brasil'}, {v:5,f:'209.300.000'}], //COMO ESCREVER BRASIL, URUGUAI E PARAGUAI EM PORTUGUÊS?
+    [{v:'Argentina',f:'Argentina'}, {v:4,f:'44.270.000'}],
   ]);
 
   var options = {
+    colorAxis: {
+      colors:  ['#bdbdbd', '#ef5350', '#ffee58', '#42a5f5', '#66bb6a'],
+      values: [1, 2, 3, 4, 5]
+    },
     region: '005', // South America
-    colorAxis: {colors: ['#bdbdbd', '#ef5350', '#ffee58', '#42a5f5', '#66bb6a']}, //COMO COLOCAR ESSAS CORES NESSA ORDEM: Ur, Pa, Bo, Ar, Br?
+    // colorAxis: {colors: ['#bdbdbd', '#ef5350', '#ffee58', '#42a5f5', '#66bb6a']}, //COMO COLOCAR ESSAS CORES NESSA ORDEM: Ur, Pa, Bo, Ar, Br?
     backgroundColor: 'white',
     datalessRegionColor: '#eeee',
     defaultColor: '#f5f5f5',
