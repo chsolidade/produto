@@ -33,7 +33,7 @@ h1{
 .cabecalho {
     display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 0.4fr;
 	grid-gap: 0.5em;
 	margin: 2rem 0;
 
@@ -57,11 +57,11 @@ h1{
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -9999;
-    opacity: 0.14;
+    opacity: 0.20;
 }
 .cabecalho-hr {
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 4 / 4;
 }
 
 
