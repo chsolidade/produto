@@ -45,3 +45,5 @@ $(document).ready(function() {
 
     
 });
+
+document.querySelector("#tve_editor > div:nth-child(9) > div.tve-cb > div:nth-child(2)")
