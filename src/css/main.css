@@ -59,6 +59,10 @@ h1{
     z-index: -9999;
     opacity: 0.14;
 }
+.cabecalho-hr {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
 
 
 
