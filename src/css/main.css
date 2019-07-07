@@ -3,7 +3,7 @@ body{
 
 }
 .body-text{
-    color: rgb(102, 102, 102); /* MUDEI A COR, MAS SÓ FOI DE ALGUNS PARÁGRAFOS, OLHA AÍ */
+    color: rgb(102, 102, 102); 
     font-weight: 500;
     font-size: 1em;
     line-height: 1.6em;

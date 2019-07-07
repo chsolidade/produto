@@ -17,8 +17,8 @@ function drawRegionsMap() {
     [{label: 'País', id: 'País'}, {label: 'População', id: 'População'}],
     [{v:'Uruguay',f:'Uruguai'}, {v:1,f:'3.457.000'}],
     [{v:'Paraguay',f:'Paraguai'}, {v:2,f:'6.811.000'}],
-    [{v:'Bolivia', f:'Bolívia'}, {v:3, f:'1.105.0000'}], //COMO COLOCAR ACENTO EM "BOLÍVIA"?
-    [{v:'Brazil',f:'Brasil'}, {v:5,f:'209.300.000'}], //COMO ESCREVER BRASIL, URUGUAI E PARAGUAI EM PORTUGUÊS?
+    [{v:'Bolivia', f:'Bolívia'}, {v:3, f:'1.105.0000'}], 
+    [{v:'Brazil',f:'Brasil'}, {v:5,f:'209.300.000'}], 
     [{v:'Argentina',f:'Argentina'}, {v:4,f:'44.270.000'}],
   ]);
 
