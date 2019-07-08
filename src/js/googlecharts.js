@@ -109,12 +109,12 @@ function drawBasic() {
       title: 'PIB nos países Estados Partes do Mercosul',
       chartArea: {width: '50%'},
       hAxis: {
-        title: '',
+        title: 'Bilhões de dólares',
         minValue: 0
       },
       vAxis: {
         title: 'País'
-      }
+      },
     };
 
     var chart = new google.visualization.BarChart(document.getElementById('quadro441'));
