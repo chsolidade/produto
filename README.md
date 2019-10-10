@@ -1,5 +1,5 @@
 # produto
-https://chsolidade.github.io/produto/
+https://educamercosul.com.br
 https://labs.jensimmons.com/
 # git
 git pull 
