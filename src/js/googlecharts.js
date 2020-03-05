@@ -18,7 +18,7 @@ function drawRegionsMap() {
     [{v:'Uruguay',f:'Uruguai'}, {v:1,f:'3.457.000'}],
     [{v:'Paraguay',f:'Paraguai'}, {v:2,f:'6.811.000'}],
     [{v:'Bolivia', f:'Bolívia'}, {v:3, f:'1.105.0000'}], 
-    [{v:'Brazil',f:'Brasil'}, {v:5,f:'209.300.000'}], 
+    [{v:'Brazil',f:'Brasil'}, {v:5,f:'207.660.929'}], 
     [{v:'Argentina',f:'Argentina'}, {v:4,f:'44.270.000'}],
   ]);
 
@@ -110,7 +110,8 @@ function drawBasic() {
       chartArea: {width: '50%'},
       hAxis: {
         title: 'Bilhões de dólares',
-        minValue: 0
+        minValue: 0,
+        ticks: [0, 1000, 2000]
       },
       vAxis: {
         title: 'País'
@@ -143,8 +144,7 @@ function drawBasic() {
 
     var options = {
       chart: {
-        title: 'IDH dos países Estados Partes',
-        subtitle: 'nota recebida'
+        title: 'IDH dos países Estados Partes'
       },
     };
 
